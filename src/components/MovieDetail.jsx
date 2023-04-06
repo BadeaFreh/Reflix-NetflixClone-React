@@ -4,13 +4,14 @@ import movies from '../data/data.movies'
 
 const MovieDetail = () => {
   const {movieId} = useParams()
-  let movie = movies.find(movie => movie.id === movieId)
+  console.log(movieId)
+  let movie = movies.find(movie => movie.id === parseInt(movieId))
   return (
-    <>
-      <h2>{movie.title} {movie.year}</h2>
-      <img src={movie.img} />
-      <p>{movie.descrShort}</p>
-    </>
+    <div className='movie-detai-container'>
+      <h2 className='movie-name'>{movie.title} ({movie.year})</h2>
+      <img className='movie-img detail-img' src={movie.img} />
+      <p className='movie-description'>{movie.descrShort}</p>
+    </div>
   )
 }
 

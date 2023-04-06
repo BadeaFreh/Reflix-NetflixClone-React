@@ -1,2 +1,21 @@
-@import './user.css';
-@import './users.css'
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+@import './users.css';
+@import './navbar.css';
+@import './movies.css';
+@import './buttons.css';
+@import './not-found.css';
+@import './detail-page.css';
+
+* {
+    font-family: 'Cardo', serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cardo', serif;
+    background-color: rgb(41, 39, 39);
+    color: #fff;
+}

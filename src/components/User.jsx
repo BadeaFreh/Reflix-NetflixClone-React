@@ -1,13 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import users from '../data/data.users';
 
-const User = ({user: {name, color}}) => {
+const User = ({user: {id, name, color}}) => {
   return (
-    <Link to="/catalog">
-    <div className='user-box' style={{backgroundColor: color}}>
-        <span>{name}</span>
+    <div>
+      <Link to="/catalog">
+        <div className='user-box' style={{backgroundColor: color}}>
+          <p className='name'>{name}</p>
+        </div>
+      </Link>
     </div>
-    </Link>
   )
 }
 

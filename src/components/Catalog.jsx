@@ -1,12 +1,21 @@
 import React from 'react'
+import MovieList from './MovieList'
+import SearchBar from './SearchBar'
+import Budget from './Budget'
+import movies from '../data/data.movies'
 
 const Catalog = () => {
   return (
     <div>
-      <input type="text" placeholder='Search...' />
-      <span>budget</span>
-      <div>movies list</div>
-
+      <div className='search-and-budget-container'>
+        <SearchBar />
+        <Budget />
+      </div>
+      
+      <div className='catalog-section'>
+        <p className='movie-category'>Catalog:</p>
+        <MovieList movies={movies} />
+      </div>
     </div>
   )
 }

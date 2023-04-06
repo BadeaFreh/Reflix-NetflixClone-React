@@ -1,0 +1,16 @@
+
+.btn {
+    background-color: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: inherit;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.movie-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

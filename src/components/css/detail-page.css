@@ -1,0 +1,21 @@
+
+.movie-detai-container {
+    margin-top: 50px;
+}
+
+.movie-name,
+.movie-description {
+    text-align: center;
+}
+
+.detail-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.movie-description {
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
