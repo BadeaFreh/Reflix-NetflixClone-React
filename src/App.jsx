@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 
 const App = () => {
+
   return (
     <>
       <Navbar />

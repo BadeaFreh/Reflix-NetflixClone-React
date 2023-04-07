@@ -1,5 +1,12 @@
 
+.movie-category {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
 .movies-container {
+    margin-left: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

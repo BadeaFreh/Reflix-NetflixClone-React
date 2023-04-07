@@ -9,8 +9,10 @@
 }
   
 .logo {
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: #E50914;
+    cursor: default;
 }
 
 .nav ul {

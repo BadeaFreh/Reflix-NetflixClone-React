@@ -1,7 +1,7 @@
 const users = [
     {
         id: "user1",
-        name: "Ron",
+        name: "Saleem",
         color: "#19A7CE",
         budget: 100
     },
@@ -13,13 +13,13 @@ const users = [
     },
     {
         id: "user3",
-        name: "Aura",
+        name: "Ezio",
         color: "#7AA874",
         budget: 100
     },
     {
         id: "user4",
-        name: "Tina",
+        name: "Arno",
         color: "#E7B10A",
         budget: 100
     }

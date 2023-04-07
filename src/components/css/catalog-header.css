@@ -1,0 +1,45 @@
+
+.search-bar-container input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 25%;
+    font-size: 16px;
+    font-family: inherit;
+    margin: 2px auto;
+    border-radius: 5px;
+}
+
+.search-bar-container input:focus {
+    outline: none;
+    border: none;
+}
+
+.catalog-container {
+    position: relative;
+}
+
+.budget-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    border: 0.5px solid white;
+    border-radius: 20px;
+}
+
+.budget {
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 10px; */
+    font-size: 20px;
+}
+
+.user-welcome {
+    text-align: center;
+    font-size: 26px;
+}
