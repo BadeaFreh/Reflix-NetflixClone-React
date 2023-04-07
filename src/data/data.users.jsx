@@ -1,23 +1,27 @@
 const users = [
     {
-        id: 1,
+        id: "user1",
         name: "Ron",
         color: "#19A7CE",
+        budget: 100
     },
     {
-        id: 2,
-        name: "Donkey Shot",
+        id: "user2",
+        name: "DonkeyShot",
         color: "#E21818",
+        budget: 100
     },
     {
-        id: 3,
+        id: "user3",
         name: "Aura",
-        color: "#7AA874"
+        color: "#7AA874",
+        budget: 100
     },
     {
-        id: 4,
+        id: "user4",
         name: "Tina",
-        color: "#E7B10A"
+        color: "#E7B10A",
+        budget: 100
     }
 ]
 

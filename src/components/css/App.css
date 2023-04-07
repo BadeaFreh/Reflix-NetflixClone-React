@@ -6,6 +6,9 @@
 @import './buttons.css';
 @import './not-found.css';
 @import './detail-page.css';
+@import './search-bar.css';
+@import './budget.css';
+@import './error-messages.css';
 
 * {
     font-family: 'Cardo', serif;

@@ -1,0 +1,10 @@
+
+.catalog-container {
+    position: relative;
+}
+
+.budget {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}

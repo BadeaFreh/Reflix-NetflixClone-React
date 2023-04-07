@@ -2,7 +2,7 @@ import React from 'react'
 import User from './User'
 import { v4 as uuidv4 } from 'uuid';
 
-const Users = ({users}) => {
+const AllUsers = ({users}) => {
   return (
     <div className='users-container'>
         <h3 className='header-title'>Who's Watching?</h3>
@@ -13,4 +13,4 @@ const Users = ({users}) => {
   )
 }
 
-export default Users
+export default AllUsers

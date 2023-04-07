@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Budget = () => {
+const Budget = ({ userBudget }) => {
   return (
-    <p>budget: {}$</p>
+    <p className='budget'>Budget: {userBudget} $</p>
   )
 }
 

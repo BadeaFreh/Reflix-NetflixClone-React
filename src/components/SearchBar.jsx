@@ -1,10 +1,11 @@
 import React from 'react'
 
-const SearchBar = () => {
+const SearchBar = ({handleSearchChange}) => {
+
   return (
-    <>
-        <input type="text" placeholder='Search...' />
-    </>
+    <div className='search-bar-container'>
+        <input type="text" placeholder='Search...' onChange={handleSearchChange} />
+    </div>
   )
 }
 

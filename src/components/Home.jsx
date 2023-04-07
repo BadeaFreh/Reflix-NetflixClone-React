@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import users from '../data/data.users'
-import Users from './AllUsers'
+import AllUsers from './AllUsers'
 
 const Home = () => {
   return (
     <>
-      <Users users={users}/>
+      <AllUsers users={users}/>
     </>
   )
 }

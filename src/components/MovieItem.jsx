@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-const MovieItem = ( {movie} ) => {
-  const [isRented, setIsRented] = useState(false)
+const MovieItem = ( {movie, handleClick, buttonType, isUserPage} ) => {
   
   return (
     <>
@@ -10,7 +9,11 @@ const MovieItem = ( {movie} ) => {
         <Link to={`${movie.id}`}>
           <img className='movie-img' src={movie.img} />
         </Link>
-        <button className='btn movie-button'>{isRented? '-': '+'}</button>
+        {isUserPage && <button 
+          className='btn movie-button' 
+          onClick={() => handleClick(movie, buttonType)}
+        >
+          {buttonType === 'remove'? '-': '+'}</button>}
       </div>
     </>
   )
