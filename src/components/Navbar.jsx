@@ -1,8 +1,8 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  
+
   return (
     <header className='header'>
         <div className='logo'>REFLIX</div>

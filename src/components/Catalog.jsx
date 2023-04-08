@@ -5,7 +5,7 @@ import Budget from './Budget'
 import DUMMY_MOVIES from '../data/data.movies'
 import DUMMY_USERS from '../data/data.users'
 import RentedMovies from './RentedMovies'
-import { useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import ErrorModal from './ErrorModal'
 const MOVIE_COST = 30
 
@@ -19,9 +19,9 @@ const Catalog = () => {
 
   let searchedMovies = movies.filter(movie => movie.title.toLowerCase().includes(search))
   let searchedRentedMovies = rentedMovies.filter(movie => movie.title.toLowerCase().includes(search))
-  const location = useLocation()
-  const userId = location.pathname.split('/')[1]
-  const isUserPage = location.pathname.split('/').length > 2
+  const userId = useParams().userId
+  const isUserPage = userId? true: false
+
   const userIndex = users.findIndex(u => u.id === userId)
 
   useEffect(() => {
@@ -124,16 +124,12 @@ const Catalog = () => {
   const currentBudget = getUserBudget()
   return (
     <div className='catalog-container'>
-      {/* {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler} />} */}
       {isUserPage && <p className='user-welcome'>Welcome, {getUserName()}!</p>}
       <div className='search-container'>
         <SearchBar handleSearchChange={handleSearchChange} />
       </div>
-      <div className='budget-container'>
-        {isUserPage && <Budget userBudget={currentBudget}/>}
-      </div>
+      {isUserPage && <Budget userBudget={currentBudget}/>}
       {<RentedMovies rentedMovies={searchedRentedMovies} handleClick={handleClick} isUserPage={isUserPage}/>}
-      {/* {error} */}
       {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler} />}
       <div className='catalog-section'>
         <p className='movie-category'>Catalog:</p>

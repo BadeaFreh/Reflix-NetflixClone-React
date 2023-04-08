@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import users from '../data/data.users'
 import AllUsers from './AllUsers'
 
